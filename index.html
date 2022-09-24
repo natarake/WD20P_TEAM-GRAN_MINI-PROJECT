@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="heroSection">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="https://www.logodesign.net/logo/swooshes-over-bus-3843ld.png"
+              class="rounded-3"
+              height="40px"
+              width="40px"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+            aria-controls="navMenu"
+            aria-expanded="false"
+            aria-label="Toggle Navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link active fw-bold text-danger"
+                  >ABOUT US</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link fw-bold text-danger">ROUTES</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link fw-bold text-danger">OFFERS</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link fw-bold text-danger">FAQS</a>
+              </li>
+            </ul>
+
+            <button
+              class="btn btn-secondary btn-danger me-3 ms-auto"
+              type="submit"
+            >
+              <a href="signup.html" class="text-decoration-none text-light"
+                >Sign Up</a
+              >
+            </button>
+            <button class="btn btn-secondary btn-success" type="submit">
+              <a href="login.html" class="text-decoration-none text-light"
+                >Login</a
+              >
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="header vh-100 d-flex align-items-center">
+        <form action="" class="d-flex pe-3 container-fluid w-75" role="search">
+          <input
+            type="text"
+            class="form-control btn btn-outline-danger"
+            placeholder="Origin"
+            aria-label=""
+          />
+          <input
+            type="text"
+            class="form-control btn btn-outline-danger"
+            placeholder="Destination"
+            aria-label=""
+          />
+          <input
+            type="text"
+            class="form-control btn btn-outline-danger"
+            placeholder="Departure Date"
+            aria-label=""
+          />
+          <input
+            type="text"
+            class="form-control btn btn-outline-danger"
+            placeholder="Arrival Date"
+            aria-label=""
+          />
+          <button class="btn btn-danger" type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <div
+        class="container-fluid d-flex align-items-center justify-content-center my-3"
+      >
+        <div
+          id="imageSlides"
+          class="carousel slide"
+          data-bs-interval="3000"
+          data-bs-ride="carousel"
+        >
+          <!-- carousel indicator buttons -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#imageSlides"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#imageSlides"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#imageSlides"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#imageSlides"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#imageSlides"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#imageSlides"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button>
+          </div>
+          <!-- carousel images -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://static.abhibus.com/busgallery/offerbanners/Sep2022/01/1662041708/476X220.webp"
+                class="d-block w-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://static.abhibus.com/busgallery/offerbanners/Sep2022/21/1663747182/476x220fest.webp"
+                class="d-block w-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://static.abhibus.com/busgallery/offerbanners/Jul2022/01/1656679914/get300_476x220.webp"
+                class="d-block w-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://static.abhibus.com/busgallery/offerbanners/Aug2022/06/1659765245/476x220.webp"
+                class="d-block w-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://static.abhibus.com/busgallery/offerbanners/Aug2022/06/1659769834/476x220%20copy.webp"
+                class="d-block w-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://static.abhibus.com/busgallery/offerbanners/May2022/18/1652881214/476-220.jpg"
+                class="d-block w-100"
+              />
+            </div>
+          </div>
+          <!-- carousel control buttons -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#imageSlides"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#imageSlides"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <h2 class="my-5 text-center">Why Choose Us</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6 col-lg-4">
+            <div class="box">
+              <span>01</span>
+              <h4><a href="#">Unmatched Benefits</a></h4>
+              <p>
+                There are many variations of passages of available, but the
+                majority have suffered alteration in some form
+              </p>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4">
+            <div class="box">
+              <span>02</span>
+              <h4><a href="#">Lowest Prices Guaranteed</a></h4>
+              <p>
+                There are many variations of Lorem Ipsum available, but the
+                majority have suffered alteration in some form
+              </p>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4">
+            <div class="box">
+              <span>03</span>
+              <h4><a href="#">Free Cancellation</a></h4>
+              <p>
+                There are many variations of Lorem Ipsum available, but the
+                majority have suffered alteration in some form
+              </p>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4">
+            <div class="box">
+              <span>04</span>
+              <h4><a href="#">24/7 Customer Assistance</a></h4>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                the majority have suffered alteration in some form
+              </p>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4">
+            <div class="box">
+              <span>05</span>
+              <h4><a href="#">Instant Refunds</a></h4>
+              <p>
+                There are many of passages of Lorem Ipsum available, but the
+                majority have suffered alteration in some form
+              </p>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4">
+            <div class="box">
+              <span>06</span>
+              <h4><a href="#">Hassle-free Booking</a></h4>
+              <p>
+                There are variations of passages of Lorem Ipsum available, but
+                the majority have suffered alteration in some form
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact us -->
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123275.96578376825!2d120.06470643439525!3d15.082706194001448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3395d4a1bd46ee73%3A0xb63aec5d90f9079e!2sSan%20Felipe%2C%20Zambales!5e0!3m2!1sen!2sph!4v1662517219087!5m2!1sen!2sph"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <!-- Contact Left -->
+
+    <section class="contactDetails">
+      <div class="contactRow">
+        <div class="contactCol">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>National Road co. Senence St.</h5>
+              <p>Brgy. East Feria, San Felipe, Zambales</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>(047) 123 4567</h5>
+              <p>Monday to Saturday 8:00-17:00</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <span>
+              <h5>info@buscompany.ph</h5>
+              <p>Email us for inquiries</p>
+            </span>
+          </div>
+        </div>
+
+        <!-- Contact Right -->
+
+        <div class="contactCol">
+          <form action="">
+            <input
+              type="text"
+              placeholder="Enter your Full Name"
+              name="fullName"
+              id="fullname"
+              required
+            />
+
+            <input
+              type="text"
+              placeholder="Enter your Address"
+              name="address"
+              id="address"
+              required
+            />
+
+            <input
+              type="tel"
+              placeholder="0917-123-4567"
+              name="mobile"
+              id="mobile"
+              required
+            />
+
+            <select name="vacStatus" id="vacStatus" required>
+              <option disabled="disabled" selected="selected">
+                --Choose Vaccination Status
+              </option>
+              <option value="firstDose">First Dose Done</option>
+              <option value="secondDose">Second Dose Done</option>
+              <option value="firstBooster">First Booster Done</option>
+              <option value="secondBooster">Second Booster Done</option>
+              <option value="antiVaxxer">Unvaccinated</option>
+            </select>
+
+            <label for="picture" class="custom"
+              ><i class="fa fa-cloud-upload"></i>Upload Vaccine Card</label
+            >
+            <input type="file" name="picture" id="picture" required />
+
+            <textarea
+              class="purpose"
+              placeholder="What is the purpose of your travel?"
+              name="intro"
+              id="intro"
+              cols="30"
+              rows="5"
+              required
+            ></textarea>
+
+            <button
+              class="submitButton"
+              type="submit"
+              name="submit"
+              id="submit"
+              value="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-danger">
+      <div class="container-fluid bg dark pt-3 border-top border-1">
+        <ul class="d-flex justify-content-center list-unstyled">
+          <li>
+            <a href=""
+              ><i class="fa fa-linkedin text-warning px-2 fw-bold"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa fa-twitter text-warning px-2 fw-bold"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa fa-facebook text-warning px-2 fw-bold"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa fa-instagram text-warning px-2 fw-bold"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="text-warning text-center border-top border-2 p-2">
+        This project will not be possible without the help of Ms. Michelle of
+        KodeGo <br />&copy; 2022 Group 2 Team GRAN - WD20P Students <br />All
+        Rights Reserve
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

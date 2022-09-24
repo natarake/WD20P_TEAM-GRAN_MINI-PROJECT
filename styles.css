@@ -1,0 +1,261 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.header img {
+    height: 93vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.heroSection {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(255,204,203,0.1),rgba(255,204,203,0.1)),url(https://www.volvobuses.com/content/dam/volvo/volvo-buses/markets/global/en-en/news/2019/1860x1050-volvo-9700-15m-variant.jpg);
+    background-position: center;
+    background-size: cover;
+
+    position:relative;
+}
+
+#navMenu ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #dc3545;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+    
+#navMenu ul li:hover::after {
+    width: 100%
+}
+
+.form-control::placeholder {
+    color: #fff;
+}
+
+/* carousel css */
+.carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    height: 90vh;
+}
+
+.carousel .carousel-indicators button {
+    background-color: #ffc107;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #ffc107;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #ffc107;
+}
+
+/* why choose us */
+.why-us h2 {
+    position: relative;
+    margin-bottom: 35px;
+}
+.why-us h2::after {
+    content: "";
+    width: 120px;
+    height: 3px;
+    display: inline-block;
+    background: #FFC107;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -20px;
+    margin: 0 auto;
+}
+
+.why-us .box {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.10);
+    transition: 0.5s;
+    position: relative;
+    background-color: #333;
+    max-height: 230px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.why-us .box:hover {
+	padding: 30px 30px 70px 30px;
+	box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.20);
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.why-us .box img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: -1;
+	opacity: 0;
+	transition:all ease 1s; 
+}
+.why-us .box:hover img {
+	opacity: 1;
+}
+.why-us .box span {
+    display: block;
+    font-size: 56px;
+    font-weight: 700;
+    color: #6b6060;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    line-height: normal;
+}
+.why-us .box h4 a {
+	font-size: 24px;
+	font-weight: 600;
+	padding: 0;
+	margin: 20px 0;
+	color: #dadada;
+	text-decoration: none;
+}
+.why-us .box p {
+	color: #aaaaaa;
+	font-size: 15px;
+	margin: 0;
+	padding: 0;
+}
+.why-us .box:hover span,
+.why-us .box:hover h4 a,
+.why-us .box:hover p {
+  	color: #fff;
+}
+
+/* contact section */
+
+
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0
+}
+
+.location iframe {
+    width:100%;
+}
+
+.contactRow {
+    display: flex;
+    justify-content: center;
+
+}
+.contactDetails {
+    width: 80%;
+    margin: auto;
+}
+
+.contactCol {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.contactCol div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contactCol div .fa {
+    font-size: 28px;
+    color: #dc3545;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contactCol div p {
+    padding: 0;
+}
+
+.contactCol div h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.contactCol form {
+    margin-left: 30px;
+}
+
+.formBorder {
+    border: 1px solid #dc3545;
+}
+
+.contactCol input, .contactCol textarea, .contactCol select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom {
+    border: 1px solid;
+    width: 100%;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 17px;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.custom:hover {
+    border: 1px solid #dc3545;
+    background: #dc3545;
+    color: white;
+    transition: 0.3s;
+}
+
+.custom .fa {
+    padding-right: 14px;
+}
+
+.submitButton {
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+    border: 1px solid grey;
+    padding: 8px 34px;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    border: 1px solid #dc3545;
+    background: #dc3545;
+    color: white;
+    transition: 0.3s;
+}
