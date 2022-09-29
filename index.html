@@ -14,8 +14,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
+      integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>Home Page</title>
   </head>
   <body>
     <section class="heroSection">
@@ -43,30 +50,35 @@
           <div class="collapse navbar-collapse" id="navMenu">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a href="index.html" class="nav-link active fw-bold text-danger"
+                <a
+                  href="index.html"
+                  class="nav-link active fw-bold text-warning"
                   >ABOUT US</a
                 >
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link fw-bold text-danger">ROUTES</a>
+                <a href="route.html" class="nav-link fw-bold text-warning">ROUTES</a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link fw-bold text-danger">OFFERS</a>
+                <a href="" class="nav-link fw-bold text-warning">OFFERS</a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link fw-bold text-danger">FAQS</a>
+                <a href="" class="nav-link fw-bold text-warning">FAQS</a>
               </li>
             </ul>
 
             <button
-              class="btn btn-secondary btn-danger me-3 ms-auto"
+              class="btn btn-secondary btn-danger me-3 ms-auto mt-3 mt-lg-0"
               type="submit"
             >
               <a href="signup.html" class="text-decoration-none text-light"
                 >Sign Up</a
               >
             </button>
-            <button class="btn btn-secondary btn-success" type="submit">
+            <button
+              class="btn btn-secondary btn-success mt-3 mt-lg-0"
+              type="submit"
+            >
               <a href="login.html" class="text-decoration-none text-light"
                 >Login</a
               >
@@ -74,34 +86,44 @@
           </div>
         </div>
       </nav>
-      <div class="header vh-100 d-flex align-items-center">
-        <form action="" class="d-flex pe-3 container-fluid w-75" role="search">
+      <div class="container vh-100 d-flex w-75 align-items-center">
+        <div class="input-group">
           <input
             type="text"
-            class="form-control btn btn-outline-danger"
-            placeholder="Origin"
-            aria-label=""
+            placeholder="From"
+            aria-label="From"
+            class="form-control"
+            required
           />
           <input
             type="text"
-            class="form-control btn btn-outline-danger"
-            placeholder="Destination"
-            aria-label=""
+            placeholder="To"
+            aria-label="To"
+            class="form-control"
+            required
           />
           <input
-            type="text"
-            class="form-control btn btn-outline-danger"
-            placeholder="Departure Date"
-            aria-label=""
+            type="date"
+            placeholder="Date of Travel"
+            aria-label="Date of Travel"
+            class="form-control"
+            required
           />
           <input
-            type="text"
-            class="form-control btn btn-outline-danger"
-            placeholder="Arrival Date"
-            aria-label=""
+          type="text"
+            list="vehicleClass"
+            placeholder="Vehicle Class"
+            aria-label="Last name"
+            class="form-control"
+            required
           />
-          <button class="btn btn-danger" type="submit">Search</button>
-        </form>
+          <datalist id="vehicleClass">
+            <option value="Regular"></option>
+            <option value="Aircon"></option>
+            <option value="Deluxe"></option>
+          </datalist>
+          <a href="tables.html" role="button" class="btn btn-warning text-light">Search</a>
+        </div>
       </div>
     </section>
 
@@ -405,36 +427,95 @@
       </div>
     </section>
 
-    <!-- footer -->
-    <footer class="bg-danger">
-      <div class="container-fluid bg dark pt-3 border-top border-1">
-        <ul class="d-flex justify-content-center list-unstyled">
-          <li>
-            <a href=""
-              ><i class="fa fa-linkedin text-warning px-2 fw-bold"></i
-            ></a>
-          </li>
-          <li>
-            <a href=""
-              ><i class="fa fa-twitter text-warning px-2 fw-bold"></i
-            ></a>
-          </li>
-          <li>
-            <a href=""
-              ><i class="fa fa-facebook text-warning px-2 fw-bold"></i
-            ></a>
-          </li>
-          <li>
-            <a href=""
-              ><i class="fa fa-instagram text-warning px-2 fw-bold"></i
-            ></a>
-          </li>
-        </ul>
+    <!-- -------------footer section----------------- -->
+    <footer id="footer" class="footer mt-5">
+      <div class="footer-content position-relative">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="footer-info">
+                <h3><span>GRAN Turismo</span></h3>
+                <p>
+                  #1120 Rizal Avenue, East Tapinac<br />
+                  Olongapo City<br /><br />
+                  <strong>Phone:</strong> (047) 222-2770<br />
+                  <strong>Email:</strong> info@granturismo.com<br />
+                </p>
+                <div class="social-links d-flex mt-3">
+                  <a
+                    href="#"
+                    class="d-flex align-items-center justify-content-center"
+                    ><i class="bi bi-twitter"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="d-flex align-items-center justify-content-center"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="d-flex align-items-center justify-content-center"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="d-flex align-items-center justify-content-center"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Routes</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Other Services</h4>
+              <ul>
+                <li><a href="#">Train Tickets</a></li>
+                <li><a href="#">Hotel Reservation</a></li>
+                <li><a href="#">Bus Hire</a></li>
+                <li><a href="#">GRANpay</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Guidelines</h4>
+              <ul>
+                <li><a href="#">Discount Policies</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Terminals</h4>
+              <ul>
+                <li><a href="#">Sampaloc</a></li>
+                <li><a href="#">Caloocan</a></li>
+                <li><a href="#">Cubao</a></li>
+                <li><a href="#">Pasay</a></li>
+                <li><a href="#">Olongapo</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="text-warning text-center border-top border-2 p-2">
-        This project will not be possible without the help of Ms. Michelle of
-        KodeGo <br />&copy; 2022 Group 2 Team GRAN - WD20P Students <br />All
-        Rights Reserve
+
+      <div class="text-center position-relative">
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright <strong><span>GRAN Turismo</span></strong
+            >. All Rights Reserved
+          </div>
+        </div>
       </div>
     </footer>
 
