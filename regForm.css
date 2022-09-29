@@ -7,6 +7,19 @@ header {
 header > nav {
   background-color: rgba(14, 29, 52, 0.3) !important;
 }
+#navMenu ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #ffc107;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+#navMenu ul li:hover::after {
+  width: 100%;
+}
 .breadcrumbs .page-header {
   padding: 140px 0 80px 0;
   position: relative;
