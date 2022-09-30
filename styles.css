@@ -1,6 +1,13 @@
+* {
+  scroll-behavior: smooth;
+}
 body {
   padding: 0;
   margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .header img {
@@ -13,9 +20,9 @@ body {
   min-height: 100vh;
   width: 100%;
   background-image: url(images/busHeroSec.png);
+  background-attachment: fixed;
   background-position: right;
   background-size: cover;
-
   position: relative;
 }
 
@@ -345,7 +352,6 @@ header > nav {
 .about h2 {
   font-size: 48px;
   font-weight: 700;
-  font-family: var(--font-secondary);
   margin: 30px 0;
 }
 
@@ -458,7 +464,6 @@ header > nav {
 .stats-counter .stats-item p {
   padding: 0;
   margin: 0;
-  font-family: var(--font-primary);
   font-size: 14px;
 }
 
@@ -638,7 +643,62 @@ header > nav {
   opacity: 1;
 }
 
-/* ----------------------offers------------------- CSS */
+/* ----------------------faqs------------------- CSS */
+
+.faq {
+  padding-top: 80px;
+}
+
+.faq .accordion-item {
+  border: 0;
+  margin-bottom: 10px;
+}
+
+.faq .accordion-collapse {
+  border: 0;
+}
+
+.faq .accordion-button {
+  padding: 15px 30px 20px 60px;
+  font-weight: 600;
+  border: 0;
+  font-size: 18px;
+  color: #52565e;
+  text-align: left;
+  background: rgba(14, 29, 52, 0.03);
+  border-radius: 5px;
+}
+
+.faq .accordion-button:focus {
+  box-shadow: none;
+}
+
+.faq .accordion-button:not(.collapsed) {
+  color: #ffc107;
+  border-bottom: 0;
+  box-shadow: none;
+}
+
+.faq .question-icon {
+  position: absolute;
+  top: 14px;
+  left: 25px;
+  font-size: 20px;
+  color: #ffc107;
+}
+
+.faq .accordion-button:after {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.faq .accordion-body {
+  padding: 0 30px 25px 60px;
+  border: 0;
+  background: rgba(14, 29, 52, 0.03);
+  border-radius: 5px;
+}
 
 
 /* ---------------Footer CSS-------------------- */
@@ -740,4 +800,8 @@ header > nav {
   color: #feb900;
 }
 
-/* cards */
+.scrollToTop {
+  position: absolute;
+  top: -200px;
+  right: 30px;
+}  

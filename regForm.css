@@ -92,7 +92,7 @@ input[type="file"] {
 }
 .custom {
   border: 1px solid #ffc107;
-  width: 90%;
+  width: 95%;
   display: inline-block;
   padding: 6px 12px;
   cursor: pointer;
